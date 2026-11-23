@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biblioteca Digital UniFECAF: livros, materiais acadêmicos e conteúdos de apoio à aprendizagem em um só lugar.">
+  <title>Biblioteca Digital UniFECAF</title>
+
+  <!-- Fontes: Poppins (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Link de atalho para quem navega pelo teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Biblioteca Digital UniFECAF, ir para o início">
+        <img src="assets/imagens/logo-livro.svg" alt="" width="44" height="44">
+        <span class="brand-text">
+          <strong>Biblioteca Digital</strong>
+          <span>UniFECAF</span>
+        </span>
+      </a>
+
+      <!-- Menu mobile (checkbox + label, sem JavaScript) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <span class="sr-only">Abrir ou fechar o menu</span>
+        <span class="menu-icon" aria-hidden="true"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn-accent nav-cta" href="#contato">Acessar acervo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Acervo online para estudantes</p>
+          <h1 id="titulo-hero">Seu conhecimento a um clique de distância</h1>
+          <p class="lead">Encontre livros, materiais acadêmicos e conteúdos de apoio à aprendizagem da UniFECAF, onde e quando você precisar.</p>
+
+          <form class="search" role="search" action="#destaques" method="get">
+            <label for="busca" class="sr-only">Buscar por título, autor ou assunto</label>
+            <input type="search" id="busca" name="q" placeholder="Busque por título, autor ou assunto">
+            <button type="submit" class="btn btn-accent">Buscar</button>
+          </form>
+
+          <ul class="stats" aria-label="Números da biblioteca">
+            <li><strong>+10 mil</strong><span>títulos digitais</span></li>
+            <li><strong>8</strong><span>áreas do conhecimento</span></li>
+            <li><strong>24h</strong><span>acesso todos os dias</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/imagens/hero-biblioteca.svg" alt="Ilustração de um tablet exibindo livros digitais ao lado de uma pilha de livros" width="560" height="420">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIAS ============ -->
+    <section class="section" id="categorias" aria-labelledby="titulo-categorias">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="titulo-categorias">Explore por categoria</h2>
+          <p>Navegue pelas áreas de conhecimento e encontre o material ideal para o seu curso.</p>
+        </header>
+
+        <ul class="grid categories">
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              <h3>Saúde</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+              <h3>Tecnologia</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+              <h3>Negócios e Gestão</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5"/><circle cx="12" cy="12" r="3"/></svg>
+              <h3>Engenharia</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+              <h3>Comunicação</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 4 22 9 12 14 2 9"/><path d="M6 11.5V16c3 2.5 9 2.5 12 0v-4.5"/></svg>
+              <h3>Educação</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.2c3 0 6 1.5 6 4.8"/></svg>
+              <h3>Ciências Sociais</h3>
+            </a>
+          </li>
+          <li>
+            <a class="card category-card" href="#destaques">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+              <h3>Arquitetura</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DESTAQUES ============ -->
+    <section class="section section-alt" id="destaques" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="titulo-destaques">Livros em destaque</h2>
+          <p>Uma seleção de títulos muito consultados pelos estudantes. Obras e autores ilustrativos.</p>
+        </header>
+
+        <ul class="grid books">
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-algoritmos.svg" alt="Capa do livro Algoritmos na Prática" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Tecnologia</span>
+                <h3>Algoritmos na Prática</h3>
+                <p>Rafael Mendes</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Algoritmos na Prática</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-enfermagem.svg" alt="Capa do livro Fundamentos de Enfermagem" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Saúde</span>
+                <h3>Fundamentos de Enfermagem</h3>
+                <p>Helena Prado</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Fundamentos de Enfermagem</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-gestao.svg" alt="Capa do livro Gestão de Pessoas Hoje" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Negócios</span>
+                <h3>Gestão de Pessoas Hoje</h3>
+                <p>Carlos Nogueira</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Gestão de Pessoas Hoje</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-calculo.svg" alt="Capa do livro Cálculo para Engenharia" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Engenharia</span>
+                <h3>Cálculo para Engenharia</h3>
+                <p>Beatriz Lacerda</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Cálculo para Engenharia</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-comunicacao.svg" alt="Capa do livro Narrativa Digital" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Comunicação</span>
+                <h3>Narrativa Digital</h3>
+                <p>Juliana Azevedo</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Narrativa Digital</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-didatica.svg" alt="Capa do livro Didática no Ensino Superior" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Educação</span>
+                <h3>Didática no Ensino Superior</h3>
+                <p>Marcos Tavares</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Didática no Ensino Superior</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-sociedade.svg" alt="Capa do livro Cidadania e Sociedade" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Ciências Sociais</span>
+                <h3>Cidadania e Sociedade</h3>
+                <p>Ana Clara Ribeiro</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Cidadania e Sociedade</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card book-card">
+              <img src="assets/imagens/capa-arquitetura.svg" alt="Capa do livro Projeto e Arquitetura" width="300" height="440" loading="lazy">
+              <div class="book-info">
+                <span class="tag">Arquitetura</span>
+                <h3>Projeto e Arquitetura</h3>
+                <p>Lucas Ferraz</p>
+                <a class="link" href="#contato">Ver detalhes<span class="sr-only">: Projeto e Arquitetura</span></a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="titulo-servicos">Serviços da biblioteca</h2>
+          <p>Apoio para você estudar, pesquisar e produzir seus trabalhos com mais segurança.</p>
+        </header>
+
+        <ul class="grid services">
+          <li class="card service-card">
+            <span class="step" aria-hidden="true">1</span>
+            <h3>Acesso ao acervo digital</h3>
+            <p>Leia livros e materiais direto no navegador, no computador ou no celular.</p>
+          </li>
+          <li class="card service-card">
+            <span class="step" aria-hidden="true">2</span>
+            <h3>Pesquisa orientada</h3>
+            <p>Dicas de busca e de fontes confiáveis para trabalhos acadêmicos.</p>
+          </li>
+          <li class="card service-card">
+            <span class="step" aria-hidden="true">3</span>
+            <h3>Normas e formatação</h3>
+            <p>Orientações sobre ABNT, citações e referências para seus textos.</p>
+          </li>
+          <li class="card service-card">
+            <span class="step" aria-hidden="true">4</span>
+            <h3>Atendimento ao estudante</h3>
+            <p>Equipe disponível para tirar dúvidas sobre acesso e uso da plataforma.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CHAMADA FINAL ============ -->
+    <section class="cta" aria-labelledby="titulo-cta">
+      <div class="container cta-inner">
+        <div>
+          <h2 id="titulo-cta">Comece a estudar agora</h2>
+          <p>Entre com seus dados de aluno e acesse todo o acervo da Biblioteca Digital.</p>
+        </div>
+        <a class="btn btn-accent" href="#contato">Acessar com RA</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ RODAPÉ / CONTATO ============ -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h2 class="footer-title">Biblioteca Digital UniFECAF</h2>
+        <p>Projeto acadêmico de interface web, desenvolvido com HTML e CSS.</p>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Contato</h2>
+        <address>
+          Taboão da Serra, SP<br>
+          Telefone: <a href="tel:+551142104950">(11) 4210-4950</a>
+        </address>
+      </div>
+
+      <nav class="footer-col" aria-label="Links do rodapé">
+        <h2 class="footer-title">Navegue</h2>
+        <ul>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">© 2026 Biblioteca Digital UniFECAF. Livros, autores e números são ilustrativos.</p>
+  </footer>
+
+</body>
+</html>
